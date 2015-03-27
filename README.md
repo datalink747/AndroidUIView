@@ -4,8 +4,7 @@ It's a very simple custom views library according UIButton in iOS, all of the vi
 
 Hope you will like it :)
 
-`UIButton`
-A view extends Button, like as UIButton in iOS.
+`UIButton` A view extends Button, like as UIButton in iOS.
 
 
 ## Screenshots
@@ -51,6 +50,13 @@ all right,
     android:layout_margin="16dp"
     drakeet:shape_type="round"
     android:background="@mipmap/avatar"/>
+    
+<me.drakeet.library.UIImageView
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_margin="16dp"
+    drakeet:shape_type="round"
+    android:src="@mipmap/avatar2"/>
 ```
 
 ## BUG

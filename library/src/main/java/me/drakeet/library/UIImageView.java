@@ -29,12 +29,12 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * Created by drakeet on 3/27/15.
  */
-public class UIButton extends Button {
+public class UIImageView extends ImageView {
 
     private int WIDTH;
     private int HEIGHT;
@@ -44,16 +44,16 @@ public class UIButton extends Button {
     private Paint mPaint;
     private int mShapeType;
 
-    public UIButton(Context context) {
+    public UIImageView(Context context) {
         super(context);
     }
 
-    public UIButton(Context context, AttributeSet attrs) {
+    public UIImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public UIButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public UIImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
