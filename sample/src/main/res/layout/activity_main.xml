@@ -11,7 +11,7 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_margin="16dp"
-        drakeet:alpha_pressed="80"
+        drakeet:alpha_pressed="40"
         drakeet:color_pressed="#660303ff"
         android:background="@mipmap/ic_launcher"/>
 

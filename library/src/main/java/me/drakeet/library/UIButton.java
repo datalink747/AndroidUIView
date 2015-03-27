@@ -38,11 +38,10 @@ public class UIButton extends Button {
 
     private int WIDTH;
     private int HEIGHT;
-    private int PAINT_ALPHA = 90;
+    private int PAINT_ALPHA = 40;
 
     private int mPressedColor;
     private Paint mPaint;
-    private int mAction = -1;
 
     public UIButton(Context context) {
         super(context);
@@ -69,7 +68,7 @@ public class UIButton extends Button {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(mPressedColor);
         this.setWillNotDraw(false);
-
+        mPaint.setAlpha(0);
         this.setDrawingCacheEnabled(true);
         this.setClickable(true);
     }
@@ -85,22 +84,18 @@ public class UIButton extends Button {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (mPaint == null) return;
-        if (mAction == MotionEvent.ACTION_DOWN) {
-            mPaint.setAlpha(PAINT_ALPHA);
-        } else {
-            mPaint.setAlpha(0);
-        }
         canvas.drawRect(0, 0, WIDTH, HEIGHT, mPaint);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        mAction = event.getAction();
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
+                mPaint.setAlpha(PAINT_ALPHA);
                 invalidate();
                 break;
             case MotionEvent.ACTION_UP:
+                mPaint.setAlpha(0);
                 invalidate();
                 break;
         }
