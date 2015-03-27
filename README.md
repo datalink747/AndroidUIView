@@ -1,8 +1,12 @@
-# AndroidUIButton v1.0
+# AndroidUIView v1.0
 
-A view extends Button, like as UIButton in iOS, that can be automatically set a pressed effect to a button with a simple background image without writing a selector.xml
+It's a very simple custom views library according UIButton in iOS, all of the views can be automatically set a pressed effect to a button with a simple background image without writing a selector.xml
 
-It's a very simple custom view library, hope you will like it :)
+Hope you will like it :)
+
+`UIButton`
+A view extends Button, like as UIButton in iOS.
+
 
 ## Screenshots
 
