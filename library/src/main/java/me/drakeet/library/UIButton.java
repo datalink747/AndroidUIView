@@ -27,6 +27,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.Button;
@@ -43,6 +44,7 @@ public class UIButton extends Button {
     private int mPressedColor;
     private Paint mPaint;
     private int mShapeType;
+    private int mRadius;
 
     public UIButton(Context context) {
         super(context);
@@ -65,6 +67,7 @@ public class UIButton extends Button {
         mPressedColor = typedArray.getColor(R.styleable.UIButton_color_pressed, getResources().getColor(R.color.color_pressed));
         PAINT_ALPHA = typedArray.getInteger(R.styleable.UIButton_alpha_pressed, PAINT_ALPHA);
         mShapeType = typedArray.getInt(R.styleable.UIButton_shape_type, 1);
+        mRadius = typedArray.getDimensionPixelSize(R.styleable.UIButton_radius, getResources().getDimensionPixelSize(R.dimen.ui_radius));
         typedArray.recycle();
         mPaint = new Paint();
         mPaint.setStyle(Paint.Style.FILL);
@@ -89,7 +92,9 @@ public class UIButton extends Button {
         if (mShapeType == 0) {
             canvas.drawCircle(WIDTH/2, HEIGHT/2, WIDTH/2.1038f, mPaint);
         } else {
-            canvas.drawRect(0, 0, WIDTH, HEIGHT, mPaint);
+            RectF rectF = new RectF();
+            rectF.set(0, 0, WIDTH, HEIGHT);
+            canvas.drawRoundRect(rectF, mRadius, mRadius, mPaint);
         }
     }
 

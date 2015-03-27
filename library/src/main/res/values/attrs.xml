@@ -3,6 +3,7 @@
     <declare-styleable name="UIButton">
         <attr name="color_pressed" format="color" />
         <attr name="alpha_pressed" format="integer" />
+        <attr name="radius" format="dimension" />
         <attr name="shape_type" format="enum">
             <enum name="round" value="0"/>
             <enum name="rectangle" value="1" />

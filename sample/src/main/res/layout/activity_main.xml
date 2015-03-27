@@ -19,14 +19,37 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_margin="16dp"
-            drakeet:alpha_pressed="40"
-            drakeet:color_pressed="#0303ff"
+            drakeet:radius="6dp"
             android:background="@mipmap/ic_launcher"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/t1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <me.drakeet.library.UIButton
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:layout_margin="16dp"
+            drakeet:alpha_pressed="40"
+            drakeet:color_pressed="#0303ff"
+            android:text="UIButton"
+            android:textSize="10sp"
+            android:background="@android:color/transparent"/>
+        <!--drakeet:radius="2dp" is default-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/t0"/>
 
     </LinearLayout>
 
