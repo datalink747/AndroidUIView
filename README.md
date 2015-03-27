@@ -45,7 +45,8 @@ all right,
     android:layout_width="64dp"
     android:layout_height="64dp"
     android:layout_margin="16dp"
-    android:background="@mipmap/ic_launcher"/>
+    drakeet:shape_type="round"
+    android:background="@mipmap/avatar"/>
 ```
 
 ## BUG

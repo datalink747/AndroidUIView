@@ -42,6 +42,7 @@ public class UIButton extends Button {
 
     private int mPressedColor;
     private Paint mPaint;
+    private int mShapeType;
 
     public UIButton(Context context) {
         super(context);
@@ -63,6 +64,7 @@ public class UIButton extends Button {
         final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.UIButton);
         mPressedColor = typedArray.getColor(R.styleable.UIButton_color_pressed, getResources().getColor(R.color.color_pressed));
         PAINT_ALPHA = typedArray.getInteger(R.styleable.UIButton_alpha_pressed, PAINT_ALPHA);
+        mShapeType = typedArray.getInt(R.styleable.UIButton_shape_type, 1);
         typedArray.recycle();
         mPaint = new Paint();
         mPaint.setStyle(Paint.Style.FILL);
@@ -84,7 +86,11 @@ public class UIButton extends Button {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (mPaint == null) return;
-        canvas.drawRect(0, 0, WIDTH, HEIGHT, mPaint);
+        if (mShapeType == 0) {
+            canvas.drawCircle(WIDTH/2, HEIGHT/2, WIDTH/2.1038f, mPaint);
+        } else {
+            canvas.drawRect(0, 0, WIDTH, HEIGHT, mPaint);
+        }
     }
 
     @Override

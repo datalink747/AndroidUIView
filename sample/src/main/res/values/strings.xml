@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="t2">drakeet:alpha_pressed=\"round\"</string>
+    <string name="t1">drakeet:alpha_pressed=\"rectangle\"\ndrakeet:alpha_pressed=\"40\"\ndrakeet:color_pressed=\"#0303ff\"
+    </string>
 </resources>
