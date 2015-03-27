@@ -4,7 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="t3">UIImageView\ndrakeet:alpha_pressed=\"round\"</string>
-    <string name="t2">UIButton\ndrakeet:alpha_pressed=\"round\"</string>
+    <string name="t2">UIButton\ndrakeet:shape_type=\"round\"</string>
     <string name="t1">UIButton\ndrakeet:radius=\"6dp\"</string>
-    <string name="t0">UIButton\ndrakeet:alpha_pressed=\"40\"\ndrakeet:color_pressed=\"#0303ff\"</string>
+    <string name="t0">UIButton\ndrakeet:shape_type=\"40\"\ndrakeet:color_pressed=\"#0303ff\"</string>
 </resources>
