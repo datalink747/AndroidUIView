@@ -25,6 +25,13 @@ Import the library, then add it to your `/settings.gradle` and `/app/build.gradl
 
 It's very easy, just like this:
 
+before using, add the namespace code to your xml:
+```xml
+xmlns:drakeet="http://schemas.android.com/apk/res-auto"
+```
+
+all right, 
+
 ```xml
 <me.drakeet.library.UIButton
     android:layout_width="64dp"
