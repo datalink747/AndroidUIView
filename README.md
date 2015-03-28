@@ -17,8 +17,11 @@ Hope you will like it :)
 ## Usage
 ### Step 1
 ####Gradle
-
-Coming soon...I have uploaded it to Maven center, and it can be searched and used after some hours.
+```groovy
+dependencies {
+    compile 'me.drakeet.library:androiduiview:1.0.0'
+}
+```
 
 ####Or
 
