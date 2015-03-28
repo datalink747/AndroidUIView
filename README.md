@@ -16,12 +16,21 @@ Hope you will like it :)
 
 ## Usage
 ### Step 1
-####Gradle
+####Gradle & Maven
 ```groovy
 dependencies {
     compile 'me.drakeet.library:androiduiview:1.0.0'
 }
 ```
+
+```xml
+<dependency>
+    <groupId>me.drakeet.library</groupId>
+    <artifactId>androiduiview</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 
 ####Or
 
