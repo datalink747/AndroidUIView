@@ -5,6 +5,7 @@ It's a very simple custom views library according UIButton in iOS, all of the vi
 Hope you will like it :)
 
 `UIButton` A view extends Button, like as UIButton in iOS.
+`UIImageView` A view extends ImageView, like as UIButton in iOS.
 
 
 ## Screenshots
@@ -16,7 +17,7 @@ Hope you will like it :)
 ### Step 1
 ####Gradle
 
-Coming soon...
+Coming soon...I have uploaded it to Maven center, and it can be searched and used after some hours.
 
 ####Or
 
