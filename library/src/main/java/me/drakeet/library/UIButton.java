@@ -74,6 +74,7 @@ public class UIButton extends Button {
         mPaint.setColor(mPressedColor);
         this.setWillNotDraw(false);
         mPaint.setAlpha(0);
+        mPaint.setAntiAlias(true);
         this.setDrawingCacheEnabled(true);
         this.setClickable(true);
     }
